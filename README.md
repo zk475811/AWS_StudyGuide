@@ -9,4 +9,5 @@ Allows you to manage users and their level of access to the aws console
 * **Roles** - create roles and assign them to aws resources
 * **Policies** - a document that defines one or more permissions (JSON)
 
-hello
+IAM is global, not tied to a specific region.
+Users are given a url link to sign in, found in IAM console.
