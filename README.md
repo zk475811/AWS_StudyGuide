@@ -14,3 +14,4 @@ Users are given a url link to sign in, found in IAM console.
 
 **Root Account** - email used to sign up with aws, unlimited access to all aws resources.
   - should enable multifactor authentication
+
