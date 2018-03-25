@@ -18,3 +18,6 @@ Users are given a url link to sign in, found in IAM console.
 ### User Access Types
 1. **Programmatic** - cli or sdk (access key id, secret access key)
 2. **AWS Management Console** - web portal (username, password)
+
+Secret access key can only be viewed once and credentails can be set to inactive.  
+Can generate new access key id and secret access key.
