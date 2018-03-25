@@ -114,8 +114,20 @@ You cannot mount 1 EBS volume to multiple EC2 instances, instead use EFS
   * bootable
   
 ## Security Groups
-A virtual firewall controlling traffic to instances  
+A virtual firewall controlling traffic to instances
+
+You can have any number of EC2 instances in a security group  
 When you first launch an EC2 instance you associate it with one or more security groups
 
+All inbound traffic is blocked, and all outbound traffic is allowed by default when you create a security group
+
 Specify ports and IP addresses to allow traffic on
+
+Editing rules applies immediately
+
+Security groups are **stateful** meaning adding inbound rules add outbound rules automatically
+
+You can't specify traffic to deny on security groups, you only specify what is allowed 
+
+
 
