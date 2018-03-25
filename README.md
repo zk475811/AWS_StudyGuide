@@ -82,3 +82,27 @@ Allows for quick scaling up and down.
 
 **DrMcGiftPx**
 
+## EBS (Elastic Block Store) 
+Allows you to create storage volumes and attach them to EC2 instances.  
+Once attached you can create a filesystem, run a database, or use them in any other way you would use a block device
+
+Volumes are placed in a specific AZ where they are automatically replicated to protect you from failure 
+
+### Volume Types
+1. General Purpose SSD (GP2)
+  * general purpose balances both price and performance
+  * 3 IOPS per gig up to 10,000 IOPS
+2. Provisioned IOPS SSD (IO1)
+  * above 10,000 IOPS
+  * up to 20,000 IOPS per volume
+3. Throughput Optimized HDD (ST1)
+  * large amount of sequential data
+  * big data (hadoop)
+  * cannot be a boot volume
+4. Cold HDD (SC1)
+  * lowest cost storage for infrequently accessed workloads
+  * cannot be a boot volume
+5. Magnetic (Standard)
+  * lowest cost per gig of all EBS volume types 
+  * bootable
+  
