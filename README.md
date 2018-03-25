@@ -15,3 +15,6 @@ Users are given a url link to sign in, found in IAM console.
 **Root Account** - email used to sign up with aws, unlimited access to all aws resources.
   - should enable multifactor authentication
 
+### User Access Types
+1. **Programmatic** - cli or sdk (access key id, secret access key)
+2. **AWS Management Console** - web portal (username, password)
