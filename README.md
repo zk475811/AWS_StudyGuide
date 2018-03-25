@@ -69,16 +69,16 @@ Allows for quick scaling up and down.
   * can be on demand or reserved
   
 ### Instance Types
-**D2** - Dense storage, Hadoop, data warehousing
-**R4** - Memory optimized, memory intensive Apps/DBs
-**M4** - General purpose, Application servers
-**C4** - Compute optimized, CPU intensive apps
-**G2** - Graphics intensive, Video encoding, 3D
-**I2** - High speed storage, NoSQL, data warehousing
-**F1** - Field programmable gate array, Hardware acceleration
-**T2** - Lowest cost general purpose, web servers, small DBs
-**P2** - Graphics, general purpose GPU, Machine learning, Bit Coin mining
-**X1** - Memory optimized, Apache Spark
+**D2** - Dense storage, Hadoop, data warehousing  
+**R4** - Memory optimized, memory intensive Apps/DBs  
+**M4** - General purpose, Application servers  
+**C4** - Compute optimized, CPU intensive apps  
+**G2** - Graphics intensive, Video encoding, 3D  
+**I2** - High speed storage, NoSQL, data warehousing  
+**F1** - Field programmable gate array, Hardware acceleration  
+**T2** - Lowest cost general purpose, web servers, small DBs  
+**P2** - Graphics, general purpose GPU, Machine learning, Bit Coin mining  
+**X1** - Memory optimized, Apache Spark  
 
 **DrMcGiftPx**
 
