@@ -64,6 +64,8 @@ Allows for quick scaling up and down.
 3. **Spot** - enable you to bid whatever price you want for instance capacity
   * flexible start and end times
   * only feasible at very low compute prices
+  * if you terminate the instance you pay for the hour
+  * if aws terminates the instance because price gone above bid, free
 4. **Dedicated Host** - get a physical EC2 server for you to use, no multi-tenant
   * good for license issues
   * can be on demand or reserved
@@ -88,6 +90,8 @@ Once attached you can create a filesystem, run a database, or use them in any ot
 
 Volumes are placed in a specific AZ where they are automatically replicated to protect you from failure 
 
+You cannot mount 1 EBS volume to multiple EC2 instances, instead use EFS
+
 ### Volume Types
 1. General Purpose SSD (GP2)
   * general purpose balances both price and performance
@@ -98,11 +102,20 @@ Volumes are placed in a specific AZ where they are automatically replicated to p
 3. Throughput Optimized HDD (ST1)
   * large amount of sequential data
   * big data (hadoop)
+  * logs
+  * data warehousing
   * cannot be a boot volume
 4. Cold HDD (SC1)
   * lowest cost storage for infrequently accessed workloads
   * cannot be a boot volume
 5. Magnetic (Standard)
   * lowest cost per gig of all EBS volume types 
+  * infrequent access
   * bootable
   
+## Security Groups
+A virtual firewall controlling traffic to instances  
+When you first launch an EC2 instance you associate it with one or more security groups
+
+Specify ports and IP addresses to allow traffic on
+
