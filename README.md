@@ -34,6 +34,9 @@ Entities include:
 * AWS services that need to act on resources to perform their function
 * Users from corporate directory using id federation
 
+Roles are more secure than using access keys for resources in aws  
+If not using an aws resource to access other aws resources than you need the key
+
 ## STS (Security Token Service) 
 Grants users temporary access to aws resources.  
 Users can come from 3 sources:
