@@ -132,5 +132,16 @@ Security groups are **stateful** meaning adding inbound rules add outbound rules
 
 You can't specify traffic to deny on security groups, you only specify what is allowed 
 
+## S3 (Simple Storage Service)
+Secure, durable, highly scalable object storage
 
+Data is spread across multiple devices and facilities for durability
+
+Files can be 0 bytes up to 5 TB  
+There is unlimited storage  
+Files are stored in buckets  
+S3 is a universal namespace, names must be unique globally  
+Always recieve an Http 200 code on success
+
+### Data Consistency Model
 
